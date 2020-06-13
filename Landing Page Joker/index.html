@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Landing Page Joker</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">
+      <img src="./assets/logo.png"  alt="Logo del landing">
+    </a>
+    <div class="toggle">
+      <img src="./assets/toggle.png" alt="toggle de la pagina">
+    </div>
+  </header>
+  <div class="banner">
+    <div class="content">
+      <h2>Put on a <span>Happy</span> face</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit est minima, culpa sapiente suscipit itaque accusamus. Vitae repellat eum culpa, reprehenderit labore rem dolore nostrum? Sunt debitis doloremque eaque cumque?</p>
+      <a href="#" class="play" onclick="toggle()">
+        <img src="./assets/play.png" alt="Play para el trailer">
+        watch Trailer
+      </a>
+      <div class="slide"></div>
+      <ul class="sci">
+        <li><a href="#">
+          <img src="./assets/facebook.png" alt="facebook icon">
+        </a></li>
+        <li><a href="#">
+          <img src="./assets/twitter.png" alt="twitter icon">
+        </a></li>
+        <li><a href="#">
+          <img src="./assets/instagram.png" alt="instagram icon">
+        </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="trailer">
+    <video src="trailer.mp4" controls="true"></video>
+    <img src="./assets/close.png" class="close" onclick="toggle()" alt="icono para cerrar ventana">
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Sign in & Sign Up Form | Vanilla Javascript</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="user singinBx">
+          <div class="imgBx">
+            <img src="cassete-amarillo.jpg" alt="" />
+          </div>
+          <div class="formBx">
+            <form action="">
+              <h2>Sign In</h2>
+              <input type="text" name="" placeholder="Username" />
+              <input type="password" name="" placeholder="Password" />
+              <input type="submit" name="" value="Login" />
+              <p class="signup">
+                Don´t have an account?
+                <a href="#" onclick="toggleForm()">Sign Up.</a>
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="user singupBx">
+          <div class="formBx">
+            <form action="">
+              <h2>Create an account</h2>
+              <input type="text" name="" placeholder="Username" />
+              <input type="email" name="" placeholder="Email Address" />
+              <input type="password" name="" placeholder="Create password" />
+              <input type="password" name="" placeholder="Confirm password" />
+              <input type="submit" name="" value="Sign Up" />
+              <p class="signup">
+                Already have an account?
+                <a href="#" onclick="toggleForm()">Sign in.</a>
+              </p>
+            </form>
+          </div>
+          <div class="imgBx">
+            <img src="cassette-rojo.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      function toggleForm(){
+        var container = document.querySelector('.container')
+        container.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
